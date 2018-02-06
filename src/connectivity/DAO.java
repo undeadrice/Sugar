@@ -9,7 +9,7 @@ import model.Supply;
 
 public interface DAO {
 
-	String db = "jdbc:sqlite:\\C:\\Users\\PC\\Desktop\\Brucki Kamil\\sugarShop.db";
+	String db = "jdbc:sqlite:\\C:\\Users\\bruce\\Desktop\\Sugar\\sterownik i baza\\sugarShop.db";
 
 	List<Product> getAllProducts() throws SQLException;
 

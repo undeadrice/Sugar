@@ -29,7 +29,8 @@ public class Controller {
 
 				window.getMainPage().getBuyCount().setText("");
 				window.getMainPage().getBuyPrice().setText("");
-
+				Main.loadAndSortData();
+				Main.totalWorth();
 			} catch (NumberFormatException e) {
 				e.printStackTrace();
 			} catch (SQLException e) {
@@ -48,6 +49,8 @@ public class Controller {
 							new Expediture(null, 1, Integer.parseInt(window.getMainPage().getSellCount().getText()),
 									System.currentTimeMillis()));
 					window.getMainPage().getSellCount().setText("");
+					Main.loadAndSortData();
+					Main.totalWorth();
 				}
 			} catch (NumberFormatException | SQLException e) {
 				e.printStackTrace();
